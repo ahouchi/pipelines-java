@@ -25,6 +25,5 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
-    publishLocation: 'FilePath'
-    TargetPath: '/home/kader/artifacts'
+    publishLocation: 'Container'
     StoreAsTar: true
