@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool: 
-  name: Default
+  name: myagents
 
 steps:
 - task: Maven@3
@@ -22,11 +22,3 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'FilePath'
-    TargetPath: '\\KADMSI2021\artifacts'
-    StoreAsTar: true
