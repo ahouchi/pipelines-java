@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool: 
-  name: devops_pools
+  name: devops_pool
 
 steps:
 - task: Maven@3
