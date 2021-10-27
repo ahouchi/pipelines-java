@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool: 
-  name: myagents
+  name: devops_pools
 
 steps:
 - task: Maven@3
@@ -28,4 +28,4 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'helloworld'
     publishLocation: 'filepath'
-    fileSharePath: '\\KADMSI2021\artifacts'
+    fileSharePath: '\\MUHC-PF31L6PFD1\artifacts'
