@@ -23,9 +23,8 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
 
-- task: PublishPipelineArtifact@1
+- task: CopyFiles@2
   inputs:
-    targetPath: '$(Pipeline.Workspace)'
-    artifact: 'helloworld'
-    publishLocation: 'filepath'
-    fileSharePath: '\\MUHC-PF31L6PFD1\artifacts'
+    SourceFolder: '$(Pipeline.Workspace)/s'
+    Contents: '**'
+    TargetFolder: '\\MUHC-PF31L6PFD1\artifacts'
