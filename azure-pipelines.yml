@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool: 
-  name: devops_pool
+  name: myagents
 
 steps:
 - task: Maven@3
@@ -27,4 +27,4 @@ steps:
   inputs:
     SourceFolder: '$(Pipeline.Workspace)/s'
     Contents: '**'
-    TargetFolder: '\\MUHC-PF31L6PFD1\artifacts'
+    TargetFolder: '\\KADMSI2021\artifacts'
