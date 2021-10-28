@@ -25,6 +25,6 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Pipeline.Workspace)/s'
-    Contents: '*war'
+    SourceFolder: '$(Pipeline.Workspace)/s/target'
+    Contents: '*.war'
     TargetFolder: '\\KADMSI2021\artifacts'
