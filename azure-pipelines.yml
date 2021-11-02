@@ -6,7 +6,7 @@
 trigger:
 - master
 
-pool: devops_agents
+pool: devops_pool
   
 
 steps:
